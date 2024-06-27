@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.contact-form h2 {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    background-color:#4b9ef7 ;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info h2, .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-info p, .contact-info li, .contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 16px;
+    }
+}

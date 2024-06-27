@@ -1,0 +1,36 @@
+#sec-footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0; /* Add padding for better spacing */
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer img {
+    width: 80px; /* Adjust logo size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+#social-icons-footer {
+    display: flex;
+    gap: 10px; /* Use 'gap' for spacing between icons */
+    margin-top: 10px; /* Space between text and icons */
+    justify-content: center;
+}
+
+#social-icons-footer svg {
+    width: 24px; /* Adjust icon size for smaller screens */
+    height: 24px;
+}

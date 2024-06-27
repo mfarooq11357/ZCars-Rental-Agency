@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px 20px;
+    height: 7vh;
+}
+
+nav .logo img {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons .login {
+    background-color: #0056b3;
+    color: white;
+}
+
+.auth-buttons .register {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Responsive styles */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+header {
+    background: url('https://i.ibb.co/8c5JV1C/Background.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    height: 56vh;
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.header-content .book-now {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(4, 6, 116);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle,.active {
+        display: block;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 8px 0;
+    }
+
+    nav ul li.auth-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li.auth-buttons button {
+        margin: 10px 0;
+        width: 50%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+}

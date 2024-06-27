@@ -1,0 +1,324 @@
+#sec-service {
+    width: 100%;
+    height: 80vh; /* Ensure full viewport height */
+    background-color: #3D91D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-service-inner {
+    width: 90%;
+    max-width: 400px; /* Adjust max-width as needed */
+    background-color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px; /* Modern replacement for row-gap */
+    align-items: center;
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Slightly increased border-radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+.sec-service-inner h1 {
+    text-align: center;
+    font-size: 24px; /* Responsive font size */
+    color: #333; /* Darker color for better contrast */
+}
+
+#sec-service-inner p span {
+    color: #006ec2;
+}
+.sec-service-inner input[type="text"],
+#dates input[type="date"] {
+    border: 2px solid black;
+    width: 90%;
+    padding: 28px;
+    border-radius: 50px;
+    margin-bottom: 10px; /* Added spacing between inputs */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+#dates {
+    display: flex;
+    gap: 10px; /* Slightly increased gap between date inputs */
+}
+.sec-service-inner button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3D91D3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sec-offers {
+    width: 100%;
+    padding: 20px 0; /* Added padding for better spacing */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#sec-offers h1 {
+    font-size: xx-large;
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+}
+
+#sec-offers-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Responsive grid with minimum 250px width */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjusted gap for spacing */
+}
+
+.offer-card {
+    background-color: white;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); /* Shadow on all sides */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Increased border radius for smoother corners */
+    margin-bottom: 20px; /* Added margin bottom for spacing between cards */
+    transition: transform 0.3s ease; /* Added transition for smooth hover effects */
+}
+
+.offer-card:hover {
+    transform: translateY(-10px); /* Added hover effect for card lift */
+}
+
+.offer-card img {
+    width: 100%; /* Ensures image fills its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 220px; /* Added max-width to prevent oversized images */
+}
+
+.offer-card h2:nth-of-type(2),
+.offer-card h2:nth-of-type(3),
+.offer-card h2:nth-of-type(5) {
+    font-size: small; /* Adjusted font size for smaller headings */
+}
+
+.offer-card h2:nth-of-type(4) span {
+    color: #006ec2;
+    font-size: larger; /* Adjusted font size for price */
+}
+
+@media (max-width: 700px) {
+    #sec-offers-card {
+        grid-template-columns: 1fr 1fr; /* Two cards per row for smaller screens */
+    }
+}
+
+
+
+
+.sec-service-inner button:hover {
+    background-color: #006ec2; /* Darker shade on hover */
+}
+
+#sec-experience {
+    width: 100%;
+    padding: 50px 0; /* Added padding for spacing */
+    color: white;
+    background-color: #000000;
+    text-align: center;
+}
+
+#sec-experience h1 {
+    font-size: 2.5rem; /* Adjusted font size for responsiveness */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+#sec-experience-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Added gap between grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Added padding for spacing */
+}
+
+.experience-card {
+    background-color: rgb(20, 20, 20);
+    width: 100%; /* Adjusted width to be responsive */
+    max-width: 350px; /* Added max-width for limiting width on larger screens */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Increased border-radius for smoother corners */
+    margin: auto;
+    transition: transform 0.3s ease; /* Added transition for smooth hover effects */
+}
+
+.experience-card:hover {
+    transform: translateY(-10px); /* Added hover effect for card lift */
+}
+
+.experience-card svg {
+    width: 150px; /* Adjusted SVG size for responsiveness */
+    height: 150px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        max-width: 250px; /* Decrease max-width for smaller screens */
+    }
+
+    .experience-card svg {
+        width: 100px; /* Decrease SVG size for smaller screens */
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        max-width: 200px; /* Further decrease max-width for very small screens */
+    }
+
+    .experience-card svg {
+        width: 80px; /* Further decrease SVG size for very small screens */
+        height: 80px;
+    }
+}
+
+@media (max-width: 900px) {
+    #sec-experience-card,
+    #sec-offers-card{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+    #sec-city-image{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))!important;
+    }
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    #sec-offers-card {
+        grid-template-columns: 1fr; /* One card per row for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-service-inner {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+}
+
+
+#sec-cities {
+    width: 100%;
+    padding: 50px 0; /* Adjust as needed */
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+#sec-cities h1 {
+    font-size: 2rem; /* Use rem for better scalability */
+    margin-bottom: 20px; /* Add spacing below heading */
+}
+
+#sec-city-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Adjust gap between items */
+    justify-items: center; /* Center items horizontally */
+}
+
+.city-image {
+    width: 250px; /* Fixed width for each grid item */
+    height: 250px; /* Fixed height for each grid item */
+    overflow: hidden; /* Ensure image does not overflow container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.city-image:hover {
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.city-image img {
+    width: 100%; /* Ensure image fills its container */
+    height: 100%; /* Ensure image fills its container */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.city-image h2 {
+    margin-top: 10px; /* Add space above heading */
+    font-size: 1.2rem; /* Adjust heading font size */
+}
+#jdhjdjd{
+    height: 213px;
+}
+
+
+#sec-growth {
+    width: 100%;
+    padding: 50px 0; /* Adjust padding for better spacing */
+    color: white;
+    background-color: #006ec2;
+    text-align: center;
+    /* Adjust positioning */
+    position: relative;
+    /* top: 570%; */ /* Commented out for demonstration; adjust as needed */
+}
+
+#sec-growth h1 {
+    font-size: 2rem; /* Use rem for better scalability */
+}
+
+#sec-growth-card {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards stay in one row */
+    justify-content: space-around; /* Distribute space evenly between cards */
+    gap: 20px; /* Add gap between cards */
+    padding: 20px; /* Padding inside the grid */
+    overflow-x: auto; /* Allow horizontal scroll on smaller screens */
+}
+
+.growth-card {
+    background-color: #006ec2; /* Adjust background color */
+    padding: 20px; /* Add padding inside the card */
+    flex: 1 1 auto; /* Allow cards to grow and shrink */
+    max-width: calc(33.33% - 20px); /* Limit maximum width of each card */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+.growth-card svg {
+    width: 80px; /* Adjust size of SVG */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between SVG and text */
+}
+
+@media (max-width: 768px) {
+    #sec-growth-card {
+        flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+        justify-content: center; /* Center cards when wrapping */
+    }
+    
+    .growth-card {
+        max-width: calc(50% - 20px); /* Adjust max-width for smaller screens */
+    }
+}
